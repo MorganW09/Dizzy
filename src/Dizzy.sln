@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dizzy", "Dizzy\Dizzy.csproj", "{975FE81F-AC54-498D-9C8A-2EA986929755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dizzy.Test", "Dizzy.Test\Dizzy.Test.csproj", "{C198C517-FDEF-4679-8912-6C0753D1787B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{975FE81F-AC54-498D-9C8A-2EA986929755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975FE81F-AC54-498D-9C8A-2EA986929755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975FE81F-AC54-498D-9C8A-2EA986929755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975FE81F-AC54-498D-9C8A-2EA986929755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C198C517-FDEF-4679-8912-6C0753D1787B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C198C517-FDEF-4679-8912-6C0753D1787B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C198C517-FDEF-4679-8912-6C0753D1787B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C198C517-FDEF-4679-8912-6C0753D1787B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {050097B7-9186-40B0-8544-9612D891DBF7}
+	EndGlobalSection
+EndGlobal

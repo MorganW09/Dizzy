@@ -6,7 +6,12 @@ namespace Dizzy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var i = new Interpreter("++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.");
+
+            i.Run();
+
+            Console.ReadKey();
         }
     }
 

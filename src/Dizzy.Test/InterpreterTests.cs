@@ -123,6 +123,35 @@ namespace Dizzy.Test
 
             Assert.Equal(0, i.pointer);
             Assert.Equal(0, i.tape[0]);
+            Assert.Equal(0, i.tape[1]);
+        }
+
+        [Fact]
+        public void Test_JumpForwardTwice()
+        {
+            var input = "[+[+]+]>+";
+
+            var i = new Interpreter(input);
+
+            i.Run();
+
+            Assert.Equal(1, i.pointer);
+            Assert.Equal(0, i.tape[0]);
+            Assert.Equal(1, i.tape[1]);
+            Assert.Equal(0, i.tape[2]);
+        }
+
+        [Fact]
+        public void Test_JumpBackwardTwice()
+        {
+            var input = "++[>[]<-]";
+
+            var i = new Interpreter(input);
+
+            i.Run();
+
+            Assert.Equal(0, i.pointer);
+            Assert.Equal(0, i.tape[0]);
         }
         
     }

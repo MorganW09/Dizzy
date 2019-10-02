@@ -18,6 +18,7 @@ namespace Dizzy
 
         public void Run()
         {
+            var unmatchedBracketCounter = 0;
             for (int i = 0; i < input.Length; i++)
             {
                 switch (input[i])
@@ -42,27 +43,39 @@ namespace Dizzy
                     case '[':
                         if (tape[pointer] == 0)
                         {
-                            while (input[i] != ']')
+                            unmatchedBracketCounter++;
+                            while (input[i] != ']' || unmatchedBracketCounter != 0)
                             {
                                 i++;
+
+                                if (input[i] == '[')
+                                {
+                                    unmatchedBracketCounter++;
+                                }
+                                else if (input[i] == ']')
+                                {
+                                    unmatchedBracketCounter--;
+                                }
                             }
-                        }
-                        else
-                        {
-                            pointer++;
                         }
                         break;
                     case ']':
                         if (tape[pointer] != 0)
                         {
-                            while (input[i] != '[')
+                            unmatchedBracketCounter++;
+                            while (input[i] != '[' || unmatchedBracketCounter != 0)
                             {
                                 i--;
+
+                                if (input[i] == ']')
+                                {
+                                    unmatchedBracketCounter++;
+                                }
+                                else if (input[i] == '[')
+                                {
+                                    unmatchedBracketCounter--;
+                                }
                             }
-                        }
-                        else
-                        {
-                            pointer++;
                         }
                         break;
                 }

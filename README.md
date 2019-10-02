@@ -1,0 +1,2 @@
+# Dizzy
+A brainfuck interpreter

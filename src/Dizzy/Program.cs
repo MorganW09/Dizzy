@@ -7,11 +7,10 @@ namespace Dizzy
         static void Main(string[] args)
         {
 
-            var i = new Interpreter("++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.");
+            var i = new Interpreter(args[0]);
 
             i.Run();
 
-            Console.ReadKey();
         }
     }
 

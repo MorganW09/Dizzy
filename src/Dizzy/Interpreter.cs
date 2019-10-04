@@ -39,6 +39,8 @@ namespace Dizzy
                         Console.Write(Convert.ToChar(tape[pointer]));
                         break;
                     case ',':
+                        var key = Console.ReadKey();
+                        tape[pointer] = (byte)key.KeyChar;
                         break;
                     case '[':
                         if (tape[pointer] == 0)
